@@ -15,7 +15,7 @@ app.use(
 app.use(express.json());
 app.use(express.static(path));
 mongoose
-  .connect("mongodb+srv://admin-ravi:test-123@cluster0.edcha.mongodb.net/authDB")
+  .connect("mongodb+srv://admin-ravi:"+process.env.PASS+"@cluster0.edcha.mongodb.net/authDB")
   .then(
     () => {
       console.log("mongoDB connected");
