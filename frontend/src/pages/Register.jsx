@@ -34,10 +34,10 @@ function Register() {
           // console.log(error.response.headers);
         } else if (error.request) {
           // The request was made but no response was received
-          console.log(error.request);
+          console.log("registration error 1 is... "+error.request);
         } else {
           // Something happened in setting up the request that triggered an Error
-          console.log("Error", error.message);
+          console.log("registration error 2 is... "+error.message);
         }
       });
     // .then(response => console.log(response.data))

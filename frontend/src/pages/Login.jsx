@@ -38,16 +38,16 @@ const Login = () => {
       .catch((error) => {
         if (error.response) {
           // Request made and server responded
-          setmessage(error.response.data.message);
+          setmessage("login error 1 is... "+error.response.data.message);
           // console.log(error.response.data);
           // console.log(error.response.status);
           // console.log(error.response.headers);
         } else if (error.request) {
           // The request was made but no response was received
-          console.log(error.request);
+          console.log("login error 2 is... "+error.request);
         } else {
           // Something happened in setting up the request that triggered an Error
-          console.log("Error", error.message);
+          console.log("login error 3 is... "+error.message);
         }
       });
 
